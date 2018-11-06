@@ -1,173 +1,85 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+* {
+    box-sizing: border-box;
+    border-style: none;
+    border-width:0px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  body {
+    font-family: "Times New Roman', Times, serif";
+    background-color: #333;
+    width: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
-.TopBanner {width:100%;
-    height: 40px;}
+#topbanner {
+        width: 100%;
+        width: 100vw;
+        height: 60px;
+        position: static;
+        background-color: #333;
 
-.Logo {
-    position: fixed;
-    top: 5px;
-    left:0px;
-    width: 20px;
-    height: 20px;
-    background-color: white;
 }
 
+#Logo {float: left;
+    width: 5%;
+height: 100%;
+background-color: #333;
+vertical-align: middle;
+padding-top:14px;
 
-.Slogan h1 
+}
 
-{font-size: 15px;
-font-family: 'Times New Roman', Times, serif;
-color: black;}
+#LogoTextSpace{float:right;
+width: 95%;
+height: 100%;
+background-color: #333;
+padding-top: 15px;
 
+}
 
-.Slogan div
+#LogoText {color: white;}
 
-{position: relative;
-top:5px;
-height: 40px;
+#PreNavBar {width:100%;
+position: static;
+height: 2px;
+background-color: red;}
+
+#NavBar {width:100%;
+    position: static;
+
+padding: 0px;
+margin: 0px;
 }
 
 ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-/*Create a horizontal list with spacing*/
+
 li {
-    display:inline-block;
     float: left;
-    margin-right: 1px;
 }
-/*Style for menu links*/
+
 li a {
-    display:block;
-    min-width:140px;
-    height: 50px;
+    display: block;
+    color: white;
     text-align: center;
-    line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #2f3036;
+    padding: 14px 16px;
     text-decoration: none;
 }
-/*Hover state for top level links*/
-li:hover a {
-    background: #19c589;
+
+li a:hover {
+    background-color: #111;
 }
-/*Style for dropdown links*/
-li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-}
-/*Hover state for dropdown links*/
-li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
-}
-/*Hide dropdown links until they are needed*/
-li ul {
-    display: none;
-}
-/*Make dropdown links vertical*/
-li ul li {
-    display: block;
-    float: none;
-}
-/*Prevent text wrapping*/
-li ul li a {
-    width: auto;
-    min-width: 100px;
-    padding: 0 20px;
-}
-/*Display the dropdown on hover*/
-ul li a:hover + .hidden, .hidden:hover {
-    display: block;
-}
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background: #19c589;
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-}
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
-}
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ #menu{
-    display: block;
-}
-/*Responsive Styles*/
-@media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
-    ul {
-        position: static;
-        display: none;
-    }
-    /*Create vertical spacing*/
-    li {
-        margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
-        width: 100%;
-    }
-    /*Display 'show menu' link*/
-    .show-menu {
-        display:block;
-    }
-}
+
+#content {padding-top: 4px;
+    position: static;}
